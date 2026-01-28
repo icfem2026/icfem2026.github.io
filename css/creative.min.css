@@ -35,6 +35,11 @@ img::-moz-selection{color:#fff;background:0 0}
   #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus:hover,#mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:hover{color:#f05f40}
 }
 
+#navbarResponsive{
+    justify-content: center !important;
+  }
+  
+
 /* ===========================
    MASTHEAD (VIDEO ONLY)
    =========================== */
@@ -154,3 +159,5 @@ header.masthead h1 strong::after{
 ul.rtl{direction:rtl}
 .t{text-align:left}
 .listouter{width:150px}
+
+
