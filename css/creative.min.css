@@ -161,3 +161,24 @@ ul.rtl{direction:rtl}
 .listouter{width:150px}
 
 
+
+.navbar-nav .nav-link {
+  white-space: nowrap;
+}
+
+.important-dates-link {
+  white-space: nowrap;
+}
+
+
+/* keep labels bold, make ONLY the dates regular */
+.date-label { font-weight: 700; }
+.date-value { font-weight: 400; }
+
+
+/* Attractions: only titles bold; all description text regular */
+#Attractions .venue-title { font-weight: 700; }
+#Attractions .venue-desc  { font-weight: 400; }
+
+/* Optional: remove bold if any <strong> remains inside the section */
+#Attractions strong { font-weight: 700; }
