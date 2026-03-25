@@ -182,3 +182,16 @@ ul.rtl{direction:rtl}
 
 /* Optional: remove bold if any <strong> remains inside the section */
 #Attractions strong { font-weight: 700; }
+
+.fmas-logo-box {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 10px 16px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.fmas-logo {
+  max-width: 160px;
+  height: auto;
+}
