@@ -375,7 +375,7 @@
           </div>
           
           <div class="col-lg-6 text-left">
-              <p class="mb-2 text-white"><strong>Title:</strong> [Updating soon] </p>
+              <p class="mb-2 text-white"><strong>Title:</strong> Proving correctness of distributed algorithms thanks to parameterized verification </p>
               <p class="mb-2 text-white text-justify"><strong>Speaker: </strong><a href="https://people.rennes.inria.fr/Nathalie.Bertrand/"><strong> Prof. Nathalie Bertrand</strong></a>
                 is a senior researcher at Inria, based in Rennes (France). Her research interests are centered on formal methods for the verification and synthesis of complex systems. She focuses on model-checking algorithms, games for synthesis and model-based testing. In recent years, she has been interested in applying formal methods to prove the correctness of distributed algorithms.</p>
           </div>
@@ -384,7 +384,34 @@
 
           <div class="col-lg-10 text-left" style="padding-top: 15px;"> 
               <p class="mb-2 text-white"><strong>Abstract:</strong></p>
-              <p class="mb-2 text-white text-justify">[Updating soon]</p>
+              <p class="mb-2 text-white text-justify">Distributed and concurrent systems lie at the core of modern digital applications, devices, and infrastructures. Since errors in cloud computing, e-commerce platforms, or transportation systems can have dramatic consequences, rigorous methods for their verification are essential. Distributed algorithms underpin
+                these systems, beginning with protocols for core tasks such as consensus, leader
+                election, and data consistency–elements critical to ensuring proper functioning.<br><br>
+                
+                In this invited talk, we present model-checking techniques to prove the correctness of distributed algorithms with a round-based structure. The executions
+                of such algorithms are unbounded in two dimensions: the number of processes
+                or threads they involve, and the number of rounds they undergo. Correctness
+                of distributed algorithms must, however, be ensured in all cases. Automated
+                verification of round-based distributed algorithms is therefore challenging, as it
+                amounts to verifying unboundedly many infinite-state systems simultaneously.
+                Unsurprisingly, it can be shown that, for natural modeling formalisms, the corresponding parameterized model-checking problem is undecidable.<br><br>
+                
+                To overcome this impossibility result, we developed two sound–thus unavoidably incomplete– approaches, both leveraging the notion of abstractions. In our first contribution, we reduced, in a sound and complete manner, the
+                semantics of round-based distributed algorithms to that of a counter system with
+                infinitely many counters. To verify this abstraction, we developed a customized
+                CEGAR(counter-example guided abstraction refinement) loop that analyzes the
+                resulting counter system using efficient SMT solvers. Our prototype implementation exhibits promising results, as it enables efficient verification of the desired
+                correctness properties for standard consensus algorithms.<br><br>
+                
+                We then extended the range of algorithms we could handle by proposing a more
+                general model for round-based distributed algorithms, for which we provided a
+                sound and complete reduction to a counter system with finitely many counters.
+                Abstracting to this well-known class of models enables the use of mature symbolic
+                model checkers, such as nuXmv, to verify the resulting abstraction. For this
+                second approach, experiments demonstrate that correctness of consensus and
+                leader election protocols can be verified within seconds.<br><br>
+                
+                The key takeaway of this line of work is that, despite the undecidability of the parameterized model-checking problem, the verification of round-based distributed algorithms’ correctness is practically achievable.</p>
               <hr class="my-4">
             </div>
       </div>
